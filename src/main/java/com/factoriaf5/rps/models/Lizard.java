@@ -2,16 +2,16 @@ package com.factoriaf5.rps.models;
 
 import com.factoriaf5.rps.application.Game;
 
-public class Paper implements Game {
+public class Lizard implements Game {
     @Override
     public String getName() {
-        return "Paper";
+        return "Lizard";
     }
-
+    
     @Override
     public boolean beats(Game other) {
-    
-        return "Rock".equalsIgnoreCase(other.getName()) ||
-            "Spock".equalsIgnoreCase(other.getName());
+
+        return "Spock".equalsIgnoreCase(other.getName()) ||
+            "Paper".equalsIgnoreCase(other.getName());
     }
 }

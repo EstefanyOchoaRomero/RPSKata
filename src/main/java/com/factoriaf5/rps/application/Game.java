@@ -1,5 +1,6 @@
 package com.factoriaf5.rps.application;
 
-public class Game {
-    
+public interface Game{
+    String getName();
+    boolean beats(Game other);
 }
